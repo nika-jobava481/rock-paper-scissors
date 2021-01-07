@@ -1,0 +1,60 @@
+* {
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+
+.scores {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.score-area {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-weight: 600;
+    text-align: center;
+}
+
+.score-area p {
+    margin: 10px 0;
+}
+
+.rps {
+    margin: 100px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rps div {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rps div:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 6px 9px 2px rgba(0,0,0), 3px 2px 0px 0px rgba(0,0,0);
+}
+
+.rps div:active {
+    transform: scale(0.97);
+    box-shadow: none;
+}
+
+.rps div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
