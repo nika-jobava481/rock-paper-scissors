@@ -9,7 +9,7 @@ var scissors = document.querySelector(".scissors");
 var playerChoice = document.querySelectorAll(".player-choice");
 
 function getRandomValue() {
-    return Math.ceil(Math.random() * 1000);
+    return Math.ceil(Math.random() * 100);
 }
 
 function changePoints() {
@@ -51,7 +51,7 @@ function checkPoints() {
 
 rock.addEventListener("click", function () {
     var pcValue = getRandomValue();
-    if (pcValue <= 500) {
+    if (pcValue <= 50) {
         pcPlus();
     }else{
         playerPlus();
@@ -62,7 +62,7 @@ rock.addEventListener("click", function () {
 
 paper.addEventListener("click", function () {
     var pcValue = getRandomValue();
-    if (pcValue <= 500) {
+    if (pcValue <= 50) {
         pcPlus();
     }else{
         playerPlus();
@@ -73,7 +73,7 @@ paper.addEventListener("click", function () {
 
 scissors.addEventListener("click", function () {
     var pcValue = getRandomValue();
-    if (pcValue <= 500) {
+    if (pcValue <= 50) {
         pcPlus();
     }else{
         playerPlus();
