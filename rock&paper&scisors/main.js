@@ -9,7 +9,7 @@ var scissors = document.querySelector(".scissors");
 var playerChoice = document.querySelectorAll(".player-choice");
 
 function getRandomValue() {
-    return Math.ceil(Math.random() * 3);
+    return Math.ceil(Math.random() * 1000);
 }
 
 function changePoints() {
@@ -51,17 +51,9 @@ function checkPoints() {
 
 rock.addEventListener("click", function () {
     var pcValue = getRandomValue();
-    if (pcValue = 1) {
-        var randNum = Math.ceil(Math.random() * 2);
-        if (randNum == 1) {
-            pcValue++;
-        } else {
-            pcValue += 2;
-        }
-    }
-    if (pcValue == 2) {
+    if (pcValue <= 500) {
         pcPlus();
-    } else if (pcValue == 3) {
+    }else{
         playerPlus();
     }
     changePoints();
@@ -70,17 +62,9 @@ rock.addEventListener("click", function () {
 
 paper.addEventListener("click", function () {
     var pcValue = getRandomValue();
-    if (pcValue = 2) {
-        var randNum = Math.ceil(Math.random() * 2);
-        if (randNum == 1) {
-            pcValue++;
-        } else {
-            pcValue--;
-        }
-    }
-    if (pcValue == 3) {
+    if (pcValue <= 500) {
         pcPlus();
-    } else if (pcValue == 1) {
+    }else{
         playerPlus();
     }
     changePoints();
@@ -89,17 +73,9 @@ paper.addEventListener("click", function () {
 
 scissors.addEventListener("click", function () {
     var pcValue = getRandomValue();
-    if (pcValue = 3) {
-        var randNum = Math.ceil(Math.random() * 2);
-        if (randNum == 1) {
-            pcValue -= 2;
-        } else {
-            pcValue--;
-        }
-    }
-    if (pcValue == 1) {
+    if (pcValue <= 500) {
         pcPlus();
-    } else if (pcValue == 2) {
+    }else{
         playerPlus();
     }
     changePoints();
