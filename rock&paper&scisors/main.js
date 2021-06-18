@@ -9,7 +9,7 @@ var scissors = document.querySelector(".scissors");
 var playerChoice = document.querySelectorAll(".player-choice");
 var difficulty = Number(prompt("choose difficulty in range 1-100"));
 
-if(difficulty>100 || difficulty<1){
+if (difficulty > 100 || difficulty < 1) {
     alert("you must choose value between 1-100");
     location.reload();
 }
@@ -59,7 +59,7 @@ rock.addEventListener("click", function () {
     var pcValue = getRandomValue();
     if (pcValue <= difficulty) {
         pcPlus();
-    }else{
+    } else {
         playerPlus();
     }
     changePoints();
@@ -70,7 +70,7 @@ paper.addEventListener("click", function () {
     var pcValue = getRandomValue();
     if (pcValue <= difficulty) {
         pcPlus();
-    }else{
+    } else {
         playerPlus();
     }
     changePoints();
@@ -81,7 +81,7 @@ scissors.addEventListener("click", function () {
     var pcValue = getRandomValue();
     if (pcValue <= difficulty) {
         pcPlus();
-    }else{
+    } else {
         playerPlus();
     }
     changePoints();
